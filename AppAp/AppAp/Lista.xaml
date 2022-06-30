@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAp.Lista"
+             Title="Equipos">
+    <StackLayout Margin="20,35,20,20">
+
+        <CollectionView ItemsSource="{Binding Equipos}"
+                        SelectionMode="Single"
+                        SelectionChanged="OnSelectionChanged"  >
+            <CollectionView.ItemTemplate  >
+                <DataTemplate >
+                    <Frame  Padding="5" BorderColor="Black"  CornerRadius="5" IsClippedToBounds="False" >
+                        <Grid HeightRequest="100" >
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width=".3*"></ColumnDefinition>
+                                <ColumnDefinition Width=".7*"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height=".5*"></RowDefinition>
+                                <RowDefinition Height=".5*"></RowDefinition>
+                                <RowDefinition Height=".5*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Image Grid.RowSpan="3"
+                               Source="{Binding ImagenUrl}"
+                               Aspect="AspectFill"
+                               HeightRequest="100"
+                               WidthRequest="100"></Image>
+                            <Label  Grid.Column="1" TextColor="Black"  FontAttributes="Bold" FontSize="Large"
+                                    VerticalOptions="Center"
+                               Text="{Binding Nombre}"></Label>
+                            <Label Grid.Row="1" TextColor="Black" FontAttributes="Bold" Grid.Column="1" FontSize="Medium"
+                                   Text="Liga:" ></Label>
+                            <Label Grid.Row="1" Margin="41,0,0,0"  TextColor="Black" Grid.Column="1" FontSize="Medium"
+                                   Text="{Binding Liga}" ></Label>
+                            <Label Grid.Row="2" Margin="0,0,0,0" FontAttributes="Bold" TextColor="Black" Grid.Column="1" FontSize="Medium"
+                                   Text="Campeonatos:" ></Label>
+                            <Label Grid.Row="2" Margin="128,0,0,0"  TextColor="Black" Grid.Column="1" FontSize="Medium"
+                                   Text="{Binding Campeonatos}" ></Label>
+                            
+                        </Grid>
+                       
+                    </Frame>
+                    <!--<Grid Padding="10"
+                          RowDefinitions="auto,*"
+                          ColumnDefinitions="auto, *">
+                        <Image Grid.RowSpan="2"
+                               Source="{Binding ImagenUrl}"
+                               Aspect="AspectFill"
+                               HeightRequest="100"
+                               WidthRequest="100"></Image>
+                        <Label Grid.Row="1" Grid.Column="1" 
+                               Text="{Binding Nombre}" VerticalOptions="Center"></Label>
+                        <Label Grid.Row="1" Grid.Column="1" 
+                               Text="{Binding Liga}" VerticalOptions="Center"></Label>
+                        <Label Grid.Row="1" Grid.Column="1" 
+                               Text="{Binding Campeonatos}" VerticalOptions="Center"></Label>
+                        
+                    </Grid>-->
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+        
+    </StackLayout>
+</ContentPage>

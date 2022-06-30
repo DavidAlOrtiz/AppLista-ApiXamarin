@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAp.Views.Formulario"
+             Title="Formulario">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Nombre:"></Label>
+            <Entry Placeholder="Nombre" x:Name="txt_nombre"></Entry>
+            
+            <Label Text="Apellido Paterno:"></Label>
+            <Entry Placeholder="Apellido Paterno"  x:Name="txt_apaterno"></Entry>
+            
+            <Label Text="Apellido Materno:"></Label>
+            <Entry Placeholder="Apellido Materno"  x:Name="txt_amaterno"></Entry>
+            
+            <Label Text="Telefono"></Label>
+            <Entry Placeholder="telefono"  x:Name="txt_telefono"></Entry>
+
+            <Label Text="Direccion"></Label>
+            <Entry Placeholder="Direccion"  x:Name="txt_direccion"></Entry>
+
+
+            <Label Text="Estado"></Label>
+            <Picker x:Name="Estado" Title="Estado"
+                    ItemDisplayBinding="{Binding NombreEstado}"
+                    SelectedIndexChanged="municipioP_Selected"></Picker>
+            <Label x:Name="lblEstados" Text="EtsadoS"></Label>
+            <Picker x:Name="Municipios" Title="Municipios" 
+                    ItemDisplayBinding="{Binding Nombre}" 
+                     SelectedIndexChanged="muColonia_Selected"
+                    ></Picker>
+            <Label x:Name="lblColonia" Text="Colonia"></Label>
+            <Picker x:Name="Colonia" Title="Colonia"  ItemDisplayBinding="{Binding Nombre}" ></Picker>
+
+            <Button Text="Aceptar" TextColor="Black" BackgroundColor="#2196F3"  Clicked="btnFormulario_cliclk" ></Button>
+            <Button Text="Cancelar" TextColor="white" BackgroundColor="Black"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

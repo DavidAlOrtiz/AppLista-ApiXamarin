@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "+3bID4iYnYTXxmjjYUzJ1Lezl1EmMKOrpsqnW8a0XENT/TlgJHZN7qc/mVVDdobT0OQsiFs0ZegbrqIVDtayIA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dortiz\\source\\repos\\AppAp\\AppAp\\AppAp.iOS\\AppAp.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dortiz\\.nuget\\packages\\ncontrol\\0.9.1\\ncontrol.0.9.1.nupkg.sha512",
+    "C:\\Users\\dortiz\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\dortiz\\.nuget\\packages\\ngraphics\\0.5.0\\ngraphics.0.5.0.nupkg.sha512",
+    "C:\\Users\\dortiz\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\dortiz\\.nuget\\packages\\system.runtime.serialization.primitives\\4.3.0\\system.runtime.serialization.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\dortiz\\.nuget\\packages\\xam.plugins.forms.imagecircle\\3.0.0.5\\xam.plugins.forms.imagecircle.3.0.0.5.nupkg.sha512",
+    "C:\\Users\\dortiz\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\dortiz\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppAp.Views.DetalleDeEquipo"
+             Title="Detalle Equipo"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin">
+    <ContentPage.Content>
+        <StackLayout Margin="30,30,30,30" >
+            <Label   Grid.Row="2"  Margin="100,0,0,20"  FontAttributes="Bold" FontSize="Large"
+                                    VerticalOptions="Center"
+                               x:Name="textEquipo"></Label>
+            <controls:CircleImage BorderColor="Blue"
+                                  BorderThickness="3"
+                                  HeightRequest="300"
+                                  WidthRequest="300"
+                                  Aspect="AspectFill"
+                                  HorizontalOptions="Center"
+                                  x:Name="imgEquipo"
+                                 >
+            </controls:CircleImage>
+            <Grid HeightRequest="100" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width=".3*"></ColumnDefinition>
+                    <ColumnDefinition Width=".7*"></ColumnDefinition>
+                    <ColumnDefinition Width=".7*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".5*"></RowDefinition>
+                    <RowDefinition Height=".5*"></RowDefinition>
+                    <RowDefinition Height=".5*"></RowDefinition>
+                    <RowDefinition Height=".5*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <!--<Label  Grid.Column="1" Grid.Row="2"  Margin="0,0,0,0"  FontAttributes="Bold" FontSize="Medium"
+                                    VerticalOptions="Center"
+                               x:Name="textEquipo"></Label>-->
+                <Label Grid.Row="1"  FontAttributes="Bold" Grid.Column="1" FontSize="Medium"
+                                   Text="Liga:" ></Label>
+                <Label Grid.Row="1"  FontAttributes="Bold"  Grid.Column="2" FontSize="Medium"
+                                x:Name="lblLiga"></Label>
+                <Label Grid.Row="2"  FontAttributes="Bold" Margin="0,0,0,0"  Grid.Column="1" FontSize="Medium"
+                                   Text="Titulos:" ></Label>
+                <Label Grid.Row="2"  FontAttributes="Bold"    VerticalOptions="End"  Grid.Column="2" FontSize="Medium"
+                                   x:Name="lblCampeonatos" ></Label>
+                <!--<Label Grid.Row="2" Margin="0,0,0,0" FontAttributes="Bold" Grid.Column="1" FontSize="Medium"
+                                   Text="Campeonatos:" ></Label>-->
+               
+            </Grid>
+
+            <Button   BackgroundColor="Blue"
+                      TextColor="White" BorderWidth="50" Text="Agregar Persona" Clicked="btnFormulario_cliclk"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
